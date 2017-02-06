@@ -1,0 +1,8 @@
+<ul class="workers-list">
+  {{#each model as |worker|}}
+    <li>{{link-to worker.fullName "workers.show" worker class="lnk lnk-to-worker"}}
+    <a href="#" {{action "deleteRecord" worker}} class="lnk lnk-delete-worker">Удалить</a></li>
+  {{/each}}
+</ul>
+
+<a href="#" {{action "clearStorage"}} class="lnk lnk-str-clear">Очистить</a>

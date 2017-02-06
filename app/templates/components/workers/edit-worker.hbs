@@ -1,0 +1,9 @@
+<form class="edit-form">
+  {{input value=model.firstName placeholder="Имя"}}<br>
+  {{input value=model.lastName placeholder="Фамилия"}}<br>
+  {{input value=model.age placeholder="Возраст" type="date"}}<br>
+  {{input value=model.position placeholder="Должность"}}<br>
+  {{input value=model.salary placeholder="Зарплата" type="number"}}<br>
+  <a href="#" {{action "save"}} class="lnk lnk-edit-save">Сохранить</a>
+  <a href="#" {{action "cancel"}} class="lnk lnk-edit-cancel">Отменить</a>
+</form>

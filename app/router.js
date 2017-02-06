@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('workers', function() {
+    this.route('show', {path:':worker_id'});
+    this.route('new-worker');
+    this.route('edit-worker', {path:':model_id/edit'});
+  });
 });
 
 export default Router;
