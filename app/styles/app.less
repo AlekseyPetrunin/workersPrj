@@ -1,0 +1,145 @@
+@base-color:#4380D3;
+@bttn:darken(@base-color, 15%);
+@bttn-hover:saturate(lighten(@bttn,15%), 50%);
+@del-lnk:#F10026;
+@del-lnk-hover:saturate(lighten(@del-lnk,15%), 50%);
+
+@basic-font-sz:24px;
+@nav-font-sz:28px;
+@lnk-font-sz:20px;
+
+
+
+body {
+  height:100%;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+
+header {
+  background-color:@base-color;
+  height:35px;
+  padding:5px;
+}
+
+
+ul {
+  list-style:none;
+  padding-left:5px;
+    li {
+      margin-bottom:10px;
+    }
+}
+
+
+h1 {
+  margin-left:10px;
+}
+
+
+.show-article {
+    p {
+      margin-left:30px;
+      font-size:@basic-font-sz;
+      line-height:0.5;
+    }
+}
+
+.edit-form {
+  margin-left:30px;
+    input {
+      margin-bottom:10px;
+      width:260px;
+      height:25px;
+      border-radius:3px;
+      font-size:@basic-font-sz;
+    }
+}
+
+
+.lnk {
+  text-decoration:none;
+    &-nav {
+      color:white;
+      font-size:@nav-font-sz;
+      font-weight:400;
+      margin-right:5px;
+    }
+
+    &-worker {
+
+      &-show {
+      color:@bttn;
+      font-size:@basic-font-sz;
+        &:hover {
+          color:@bttn-hover;
+        }
+      }
+
+      &-delete {
+        float:right;
+        font-size:@lnk-font-sz;
+        margin-right:15px;
+        color:@del-lnk;
+          &:hover {
+            color:@del-lnk-hover;
+        }
+      }
+
+      &-clear {
+        float:right;
+        margin-top:10px;
+        margin-right:5px;
+        color:@del-lnk;
+        font-size:@lnk-font-sz;
+          &:hover {
+            color:@del-lnk-hover;
+          }
+      }
+
+    }
+
+
+    &-show {
+
+      &-edit {
+        font-size:@lnk-font-sz;
+        color:@bttn;
+
+        &:hover {
+          color:@bttn-hover;
+        }
+      }
+
+      &-dlt {
+        margin-left:10px;
+        color:@del-lnk;
+        font-size:@lnk-font-sz;
+        &:hover {
+          color:@del-lnk-hover;
+        }
+      }
+    }
+
+    &-edit {
+
+      &-save {
+        color:@bttn;
+        margin-right:85px;
+        font-size:@lnk-font-sz;
+        &:hover {
+          color:@bttn-hover;
+        }
+      }
+
+      &-cancel {
+        color:@del-lnk;
+        font-size:@lnk-font-sz;
+        &:hover {
+          color:@del-lnk-hover;
+        }
+      }
+    }
+}
