@@ -4,4 +4,10 @@
     <a href="#" {{action "deleteRecord" worker}} class="lnk lnk-worker-delete">Удалить</a></li>
   {{/each}}
 </ul>
+{{#if model.length}}
 <a href="#" {{action "clearStorage"}} class="lnk lnk-worker-clear">Очистить</a>
+{{else}}
+<div class="no-workers-title">
+  <p>Список пуст</p>
+</div>
+{{/if}}
