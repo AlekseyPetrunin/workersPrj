@@ -2,9 +2,9 @@
 <article class="show-article">
   <p>Имя: {{model.firstName}}</p>
   <p>Фамилия: {{model.lastName}}</p>
-  <p>Возраст: {{model.age}}</p>
+  <p>Дата рождения: {{formatDate model.age}}</p>
   <p>Должность: {{model.position}}</p>
-  <p>Зарплата: {{model.salary}}</p>
+  <p>Зарплата: {{dollSalary model.salary}}</p>
   <p>{{link-to "Редактировать" "workers.edit-worker" model class="lnk lnk-show-edit"}}
   <a href="#" {{action "delete" model}} class="lnk lnk-show-dlt">Удалить</a></p>
 </article>

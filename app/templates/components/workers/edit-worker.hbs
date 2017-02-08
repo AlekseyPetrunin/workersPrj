@@ -1,4 +1,7 @@
 <form class="edit-form">
+  {{#if errorMessage}}
+    <h2 class="valid-error">{{errorMessage}}</h2>
+  {{/if}}
   {{input value=model.firstName placeholder="Имя"}}<br>
   {{input value=model.lastName placeholder="Фамилия"}}<br>
   {{input value=model.age placeholder="Возраст" type="date"}}<br>

@@ -10,5 +10,5 @@ export default DS.Model.extend({
   }),
   age:DS.attr('string'),
   position:DS.attr('string'),
-  salary:DS.attr('number')
+  salary:DS.attr('string')
 });

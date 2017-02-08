@@ -4,6 +4,9 @@
 @del-lnk:#F10026;
 @del-lnk-hover:saturate(lighten(@del-lnk,15%), 50%);
 
+@valid-error:saturate(@del-lnk, 90%);
+@valid-error-bg:lighten(@del-lnk, 25%);
+
 @basic-font-sz:24px;
 @nav-font-sz:28px;
 @lnk-font-sz:20px;
@@ -36,6 +39,16 @@ ul {
 
 h1 {
   margin-left:10px;
+}
+
+.valid-error {
+  color:@valid-error;
+  font-size:30px;
+  background-color:@valid-error-bg;
+  width:260px;
+  text-align:center;
+  border-radius:10px;
+  border:2px solid @del-lnk;
 }
 
 .no-workers-title {
